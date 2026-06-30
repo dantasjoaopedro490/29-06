@@ -11,12 +11,12 @@ function verificarNota() {
 
     if (nota < 0 || nota > 10) {
         resultado.innerHTML = "A nota deve estar entre 0 e 10.";
-        resultado.style.color = "red";
+        resultado.style.color = "gray";
         return;
     }
 
     if (nota >= 7) {
-        resultado.innerHTML = "Aprovado!";
+        resultado.innerHTML = "Aprovado.";
         resultado.style.color = "green";
     } else if (nota >= 5) {
         resultado.innerHTML = "Recuperação.";
