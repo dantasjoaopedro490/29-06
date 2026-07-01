@@ -1,80 +1,77 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background: #f4f4f4;
+    background:#f4f4f4;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
 }
 
 header{
-    background: #1f1f1f;
-    color: white;
-    padding: 25px;
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
+    background:#1565c0;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
 main{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
 }
 
-.card{
-    width: 350px;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,.2);
-    text-align: center;
+.boletim{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+    width:350px;
 }
 
-.card h2{
-    margin-bottom: 25px;
+.boletim label{
+    display:block;
+    margin-top:12px;
+    font-weight:bold;
 }
 
-input{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    font-size: 16px;
+.boletim input{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
 }
 
 button{
-    width: 100%;
-    padding: 12px;
-    background: #242424;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: .3s;
+    width:100%;
+    margin-top:20px;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    background:#1565c0;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
 }
 
 button:hover{
-    background: #161616;
+    background:#0d47a1;
 }
 
 #resultado{
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
+    margin-top:20px;
+    text-align:center;
+    font-size:18px;
 }
 
 footer{
-    background: #1f1f1f;
-    color: white;
-    text-align: center;
-    padding: 15px;
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
 }

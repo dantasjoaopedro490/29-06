@@ -1,29 +1,26 @@
-function verificarNota() {
+function calcular() {
 
-    const nota = parseFloat(document.getElementById("nota").value);
-    const resultado = document.getElementById("resultado");
+    let nome = document.getElementById("nome").value;
+    let mat = Number(document.getElementById("mat").value);
+    let port = Number(document.getElementById("port").value);
+    let cien = Number(document.getElementById("cien").value);
+    let hist = Number(document.getElementById("hist").value);
 
-    if (isNaN(nota)) {
-        resultado.innerHTML = "Digite uma nota válida.";
-        resultado.style.color = "red";
-        return;
-    }
+    let media = (mat + port + cien + hist) / 4;
 
-    if (nota < 0 || nota > 10) {
-        resultado.innerHTML = "A nota deve estar entre 0 e 10.";
-        resultado.style.color = "gray";
-        return;
-    }
+    let situacao = "";
 
-    if (nota >= 7) {
-        resultado.innerHTML = "Aprovado.";
-        resultado.style.color = "green";
-    } else if (nota >= 5) {
-        resultado.innerHTML = "Recuperação.";
-        resultado.style.color = "orange";
+    if (media >= 7) {
+        situacao = " Aprovado";
+    } else if (media >= 5) {
+        situacao = " Recuperação";
     } else {
-        resultado.innerHTML = "Reprovado.";
-        resultado.style.color = "red";
+        situacao = " Reprovado";
     }
 
+    document.getElementById("resultado").innerHTML = `
+        <h2>${nome}</h2>
+        <p>Média: <strong>${media.toFixed(1)}</strong></p>
+        <p>${situacao}</p>
+    `;
 }

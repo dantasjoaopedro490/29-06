@@ -1,30 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="main.js"></script>
+    <title>Boletim Escolar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>E.E Dona Luiza Macuco</h1>
-        <p>Boletim Escolar</p>
+        <h1>Boletim Escolar</h1>
+        <p>Sistema de Notas do Aluno</p>
     </header>
 
-    <main class="container">
-        <div class="card">
-            <h2>Digite sua nota</h2>
-            <input type="number" id="nota" min="0" max="10" placeholder="Ex: 7.5">
-            <button onclick="verificarNota()">Verificar</button>
- 
-            <p id="resultado"></p>
-        </div>
+    <main>
+        <section class="boletim">
+
+            <label for="nome">Nome do Aluno</label>
+            <input type="text" id="nome" placeholder="Digite o nome">
+
+            <label for="mat">Matemática</label>
+            <input type="number" id="mat" min="0" max="10">
+
+            <label for="port">Português</label>
+            <input type="number" id="port" min="0" max="10">
+
+            <label for="cien">Ciências</label>
+            <input type="number" id="cien" min="0" max="10">
+
+            <label for="hist">História</label>
+            <input type="number" id="hist" min="0" max="10">
+
+            <button onclick="calcular()">Calcular Média</button>
+
+            <div id="resultado"></div>
+
+        </section>
     </main>
 
     <footer>
-        <p>&copy; Desenvolvedor Jp Oliveira</p>
+        <p>&copy; 2026 - Jp Oliveira</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
